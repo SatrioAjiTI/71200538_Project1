@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dua"
+    android:orientation="vertical"
+    android:padding="50dp">
+
+    <TextView
+        android:id="@+id/tvJudul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemesanan Jam Tiket"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Jam Keberangkatan"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        >
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center">
+
+        <RadioGroup
+            android:id="@+id/rgJk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbeceb"
+            android:padding="15dp"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbJs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00"
+            />
+
+        <RadioButton
+            android:id="@+id/rbJd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16:00"
+            />
+
+        <RadioButton
+            android:id="@+id/rbJt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20:00"
+            />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Jenis Tiket"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        >
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center">
+
+        <RadioGroup
+            android:id="@+id/rgKL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbeceb"
+            android:padding="15dp"
+            android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbKe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ekonomi"
+            />
+
+        <RadioButton
+            android:id="@+id/rbKb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bisnis"
+            />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSGoTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="#00FFFF"/>
+</LinearLayout>

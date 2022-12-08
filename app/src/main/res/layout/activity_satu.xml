@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context=".satu">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemesanan Jadwal Tiket"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Kota Asal"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        >
+
+    </TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <RadioGroup
+        android:id="@+id/rgAs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dbeceb"
+        android:padding="15dp"
+        android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/rbYA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yogyakarta"
+
+        />
+
+    <RadioButton
+        android:id="@+id/rbJA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jakarta"
+        />
+
+    <RadioButton
+        android:id="@+id/rbBA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bali"
+        />
+    </RadioGroup>
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Kota Tujuan"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        >
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center">
+        <RadioGroup
+            android:id="@+id/rgAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbeceb"
+            android:padding="15dp"
+            android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbYT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yogyakarta"
+            />
+
+        <RadioButton
+            android:id="@+id/rbJT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jakarta"
+            />
+
+        <RadioButton
+            android:id="@+id/rbBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bali"
+            />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Tanggal Keberangkatan"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        >
+
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tanggal Keberangkatan"
+        android:inputType="date"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnSGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="#00FFFF"/>
+
+</LinearLayout>
